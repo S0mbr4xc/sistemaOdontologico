@@ -1,0 +1,10 @@
+<!-- src/app/my-appointments/my-appointments.component.html -->
+<div class="my-appointments">
+    <h2>Mis Citas</h2>
+    <div class="appointments-list">
+      <div class="appointment" *ngFor="let appointment of appointments">
+        <h3>{{ appointment.date }} - {{ appointment.time }}</h3>
+        <p>{{ appointment.service }}</p>
+      </div>
+    </div>
+  </div>

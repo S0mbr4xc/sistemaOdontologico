@@ -1,0 +1,11 @@
+<!-- src/app/send-query/send-query.component.html -->
+<div class="send-query">
+    <h2>Enviar Consulta</h2>
+    <form (ngSubmit)="sendQuery()">
+      <div class="form-group">
+        <label for="query">Consulta:</label>
+        <textarea id="query" name="query" [(ngModel)]="query" required></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
