@@ -1,0 +1,32 @@
+<!-- src/app/app.component.html -->
+<div class="container">
+  <!-- Encabezado -->
+  <header class="header">
+    <img src="assets/logo-medifit.png" alt="MediFit Logo" class="logo">
+    <nav class="nav">
+      <ul>
+        <li><a routerLink="/">Inicio</a></li>
+        <li><a routerLink="/services">Servicios</a></li>
+        <li><a routerLink="/about">Acerca de</a></li>
+        <li><a routerLink="/contact">Contacto</a></li>
+        <li><a routerLink="/login">Iniciar Sesión</a></li>
+        <li><a routerLink="register">Registrarse</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Cuerpo -->
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="footer">
+    <p>&copy; 2024 MediFit. Todos los derechos reservados.</p>
+    <ul class="social-media">
+      <li><a href="#"><img src="assets/logo-facebook.png" alt="Facebook"></a></li>
+      <li><a href="#"><img src="assets/logo-twitter.jpeg" alt="Twitter"></a></li>
+      <li><a href="#"><img src="assets/logo-instagram.jpeg" alt="Instagram"></a></li>
+    </ul>
+  </footer>
+</div>
